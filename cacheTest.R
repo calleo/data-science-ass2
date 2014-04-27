@@ -15,5 +15,6 @@ cacheTest <- function() {
   print(system.time(cacheSolve(mmCache)))
   print(system.time(cacheSolve(mmCache)))
   inv2 <- cacheSolve(mmCache)
+  # Check that both function return the same result
   return(all(inv2 == inv))
 }
